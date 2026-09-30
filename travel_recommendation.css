@@ -1,19 +1,29 @@
 body{
     
-   background-image: url("images/landingPage2.jpg");
+   /* background-image: url("images/landingPage2.webp");
+    */
+     /* background-size:cover; */
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #005b96;
+    margin: 0px;
+}
+
+.hero {
+    min-height: 550px;
+    background-image: url("images/landingPage2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(255, 209, 122);
-}
-
-
+  }
 
 a{
    
         text-decoration: none;
         color: inherit;
-        font-size: larger;
+        font-size: x-large;
+        color:white
+;
 }
 
 nav{
@@ -21,8 +31,25 @@ nav{
     display: flex;
     justify-content: center;
     gap: 40px;
-   padding: 10px;
+   padding: 20px;
+   margin-bottom: 0px;
 
-    background-color: aliceblue;
+    background-color:#011f4b;
+    /* border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%; */
+    
+}
+
+#search-box{
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+#searchBtn{
+    margin-left: 0px;
+    width:60px;
+    border-radius: 10%;
+    background-color: #e7eff6;
 
 }
