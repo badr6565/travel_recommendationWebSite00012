@@ -1,0 +1,28 @@
+body{
+    
+   background-image: url("images/landingPage2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 209, 122);
+}
+
+
+
+a{
+   
+        text-decoration: none;
+        color: inherit;
+        font-size: larger;
+}
+
+nav{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   padding: 1cd 0px;
+
+    background-color: aliceblue;
+
+}
