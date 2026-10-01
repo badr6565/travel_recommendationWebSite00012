@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat; */
     background-color: #005b96;
     margin: 0px;
+  
 }
 
 .hero {
@@ -16,7 +17,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     margin: 0px;
+
+    
+    
   }
+
   .hero h1{margin-top: 0px;}
 
 a{
@@ -54,4 +59,27 @@ nav{
     border-radius: 10%;
     background-color: #e7eff6;
 
+}
+#appscont{
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: end;
+    gap: 30px;
+
+
+}
+#about-cont {
+
+
+    padding-top: 20%;
+   background-color: #76beee82;
+   border-radius: 5px;
+   
+    
+ 
+   
+    
 }
