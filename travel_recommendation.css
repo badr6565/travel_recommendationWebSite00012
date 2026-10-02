@@ -115,8 +115,21 @@ display: grid;
 
 }
 #places-cont div{
-    margin-top:10px ;
-    width: 400px;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.826);
+
+
+
+margin-top:10px ;
+margin-left: 5px;
+
+height:60%; 
+width: 400px;
+border-radius: 7px;
+background-color: rgb(255, 255, 255);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+}
+#places-cont div img{
+
+    height: 50%;
+    width: 50%;
 }

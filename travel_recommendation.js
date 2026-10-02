@@ -6,8 +6,29 @@ fetch('travel_recommendation_api.json')
 
     data.countries.forEach(country => {
         const div = document.createElement('div')
-        div.innerText=`the country${country.name} `
-        divSection.appendChild(div)
+        const placesimages=document.createElement('img');
+        const title =document.createElement('h3')
+        const cities =document.createElement('h4')
+        const des =document.createElement('p')
+
+
+        placesimages.setAttribute('src',`${country.cities[0].imageUrl}`)
+        title.innerText=`${country.name}`
+        cities.innerText=`cities are ${(country.cities[0].name).split(" ")[0]} and ${(country.cities[1].name).split(" ")[0]}`
+        des.innerText=`${(country.cities[0].name).split(" ")[0]} ${country.cities[0].description} ${(country.cities[1].name).split(" ")[0]}  ${country.cities[1].description} `
+        
+
+
+       
+        
+        div.appendChild(placesimages);
+        div.appendChild(title)
+        div.appendChild(cities)
+        div.appendChild(des)
+       
+       
+        divSection.appendChild(div);
+        
     });
 
 
