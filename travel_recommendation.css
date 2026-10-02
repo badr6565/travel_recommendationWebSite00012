@@ -107,9 +107,9 @@ nav{
 
 display: grid;
  grid-template-columns: repeat(3, 1fr);
-   gap: 25px;
+   gap: 10px;
    height: 500px;
-  
+   overflow-x: auto;
 
 
 
@@ -120,8 +120,8 @@ display: grid;
 
 margin-top:10px ;
 margin-left: 5px;
-
-height:60%; 
+padding: 5px;
+height:70%; 
 width: 400px;
 border-radius: 7px;
 background-color: rgb(255, 255, 255);
@@ -130,6 +130,12 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 #places-cont div img{
 
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 100%;
+    border-radius: 12px;
+}
+#places-cont div p{
+
+    font-size: 10px;
+    
 }
