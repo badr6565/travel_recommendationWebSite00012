@@ -1,10 +1,11 @@
 var searchbar=document.getElementById('search-box')
 var divSection=document.getElementById('places-cont')
+var places=[]
 fetch('travel_recommendation_api.json')
 .then(response=>response.json())
 .then(data=>{
-
-    data.countries.forEach(country => {
+    places=data.countries
+    places.forEach(country => {
         const div = document.createElement('div')
         const placesimages=document.createElement('img');
         const title =document.createElement('h3')
@@ -34,15 +35,19 @@ fetch('travel_recommendation_api.json')
 
 
 })
-function search(){
+document.getElementById("searchBtn").addEventListener("click", function (){
     
-    var searchBtn=document.getElementById('searchBtn').value
+    var searchBtn=document.getElementById('search-box').value
     fetch('travel_recommendation_api.json')
     .then(response=>response.json())
     .then(data=>{
+      document.getElementById('places-cont').innerHTML=""
+       places= data.countries.filter(place =>
+        place.name.toLowerCase().includes(searchBtn))
 
-       var searchedPlaces= data.countries.find(country=>country.name.toLowerCase()===searchBtn)
-       searchedPlaces.forEach(country => {
+        console.log(places)
+       
+       places.forEach(country => {
         const div = document.createElement('div')
         const placesimages=document.createElement('img');
         const title =document.createElement('h3')
@@ -71,7 +76,7 @@ function search(){
 
     })
 
-})}
+})})
 
 
 
