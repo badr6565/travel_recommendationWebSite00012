@@ -5,6 +5,7 @@ fetch('travel_recommendation_api.json')
 .then(response=>response.json())
 .then(data=>{
     places=data.countries
+    
     places.forEach(country => {
         const div = document.createElement('div')
         const placesimages=document.createElement('img');
@@ -41,7 +42,7 @@ document.getElementById("searchBtn").addEventListener("click", function (){
     fetch('travel_recommendation_api.json')
     .then(response=>response.json())
     .then(data=>{
-      document.getElementById('places-cont').innerHTML=""
+      document.getElementById('places-cont').innerHTML="";
        places= data.countries.filter(place =>
         place.name.toLowerCase().includes(searchBtn))
 
