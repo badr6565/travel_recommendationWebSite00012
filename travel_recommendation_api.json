@@ -3,6 +3,7 @@
       {
         "id": 1,
         "name": "Australia",
+        "type":"country",
         "cities": [
           {
             "name": "Sydney, Australia",
@@ -19,6 +20,7 @@
       {
         "id": 2,
         "name": "Japan",
+        "type":"country",
         "cities": [
           {
             "name": "Tokyo, Japan",
@@ -35,6 +37,7 @@
       {
         "id": 3,
         "name": "Brazil",
+        "type":"country",
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
@@ -53,12 +56,14 @@
       {
         "id": 1,
         "name": "makkah, saudi arabia",
+        "type":"temple",
         "imageUrl": "images/makkah.webp",
         "description": "biggest mousqe and oldest"
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
+         "type":"temple",
         "imageUrl": "images/taj.webp",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
@@ -67,12 +72,14 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
+         "type":"beach",
         "imageUrl": "images/bora.webp",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
         "id": 2,
         "name": "Copacabana Beach, Brazil",
+          "type":"beach",
         "imageUrl": "images/copa.webp",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
       }

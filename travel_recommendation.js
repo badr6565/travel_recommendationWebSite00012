@@ -60,7 +60,7 @@ document.getElementById("searchBtn").addEventListener("click", function (){
         ...data.beaches
     ];
       var filteredPlaces= places.filter(place =>
-        place.name.toLowerCase().includes(searchBtn))
+        place.name.toLowerCase().includes(searchBtn)||place.type.toLowerCase().includes(searchBtn))
 
         console.log(filteredPlaces)
        
